@@ -1,4 +1,4 @@
-cask "omlx" do
+cask "Aerion" do
   version "0.2.3"
 
   # Choose the correct archive for Intel (amd64) vs Apple Silicon (arm64)
