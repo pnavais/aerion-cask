@@ -1,12 +1,5 @@
 cask "aerion" do
-<<<<<<< Updated upstream
   version "0.2.3"
-||||||| Stash base
-cask "omlx" do
-  version "0.2.3-build1"
-=======
-  version "0.2.3-build1"
->>>>>>> Stashed changes
 
   # Choose the correct archive for Intel (amd64) vs Apple Silicon (arm64)
   if Hardware::CPU.intel?
@@ -31,14 +24,7 @@ cask "omlx" do
 
   zap trash: [
     "~/Library/Application Support/aerion/",
-<<<<<<< Updated upstream
     "~/Library/caches/Aerion/",
-||||||| Stash base
-    "~/Library/Application Support/aerion/"
-    "~/Library/caches/Aerion/"
-=======
-    "~/Library/Caches/Aerion/",
->>>>>>> Stashed changes
   ]
 
   depends_on macos: ">= :sequoia"
