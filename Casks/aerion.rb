@@ -1,5 +1,5 @@
 cask "omlx" do
-  version "0.2.3-build1"
+  version "0.2.3"
 
   # Choose the correct archive for Intel (amd64) vs Apple Silicon (arm64)
   if Hardware::CPU.intel?
@@ -7,7 +7,7 @@ cask "omlx" do
     url "https://github.com/hkdb/aerion/releases/download/v0.2.3-build1/Aerion-darwin-amd64.zip"
   else
     sha256 "22c9696d2b0f59334bd7368e49c89a0b1fffe945ca52f17f4edb52b7154f5da2"
-    url "https://github.com/hkdb/aerion/releases/download/v0.2.3-build1/Aerion-darwin-arm64.zip"
+    url "https://github.com/hkdb/aerion/releases/download/v0.2.3/Aerion-darwin-arm64.zip"
   end
 
   name "Aerion"
