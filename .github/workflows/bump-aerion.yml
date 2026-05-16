@@ -78,7 +78,7 @@ jobs:
 
           # Replace darwin_amd64 block url and sha if present
           if darwin_amd64_url and darwin_amd64_url != 'null' and darwin_amd64_sha and darwin_amd64_sha != '':
-              text = re.sub(r'(if Hardware::CPU.intel\?\("26"\)\n\s*sha256 \")([^"]+)("\n\s*url \")([^"]+)("\n)',
+              text = re.sub(r'(if Hardware::CPU.intel\?\n\s*sha256 \")([^"]+)("\n\s*url \")([^"]+)("\n)',
                   lambda m: m.group(1) + darwin_amd64_sha + m.group(3) + darwin_amd64_url + m.group(5),
                   text)
 
