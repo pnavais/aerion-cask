@@ -17,8 +17,8 @@ cask "omlx" do
   app "Aerion.app"
 
   zap trash: [
-    "~/Library/Application Support/aerion/"
-    "~/Library/caches/Aerion/"
+    "~/Library/Application Support/aerion/",
+    "~/Library/caches/Aerion/",
   ]
 
   depends_on macos: ">= :sequoia"
