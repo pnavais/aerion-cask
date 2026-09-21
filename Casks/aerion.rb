@@ -1,13 +1,13 @@
 cask "aerion" do
-  version "0.3.3"
+  version "0.3.5"
 
   # Choose the correct archive for Intel (amd64) vs Apple Silicon (arm64)
   if Hardware::CPU.intel?
-    sha256 "3cac3480eff23883740b90f12d970646fccc22abb2194b81f41eff0ce8ea22f8"
-    url "https://github.com/hkdb/aerion/releases/download/v0.3.3/Aerion-darwin-amd64.zip"
+    sha256 "07cd3581d5d56d3d91d71936ae875acd944c32c80cb1102f8ca3def3f300edff"
+    url "https://github.com/hkdb/aerion/releases/download/v0.3.5/Aerion-darwin-amd64.zip"
   else
-    sha256 "4f6b3f439dde5a0d20a2b559426e31b54f04e4a90d1aa5e3fa2bea790647f944"
-    url "https://github.com/hkdb/aerion/releases/download/v0.3.3/Aerion-darwin-arm64.zip"
+    sha256 "0d2e01dd0505b13edfc287290c57322859a7fcc79f8a142dff94c6baebea7490"
+    url "https://github.com/hkdb/aerion/releases/download/v0.3.5/Aerion-darwin-arm64.zip"
   end
 
   name "Aerion"
